@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="org.eshendo.helperapp.ui.fragments.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/main_fragment"
+        >
+        <action
+            android:id="@+id/action_mainFragment_to_speechToTextFragment"
+            app:destination="@id/speechToTextFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_textToSpeechFragment"
+            app:destination="@id/textToSpeechFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_describePictureFragment"
+            app:destination="@id/describePictureFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_wannaMakeOfferDialog"
+            app:destination="@id/wannaMakeOfferDialog" />
+        <action
+            android:id="@+id/action_mainFragment_to_makeOfferFragment"
+            app:destination="@id/makeOfferFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_appCannotWorkDialog"
+            app:destination="@id/appCannotWorkDialog" />
+        <action
+            android:id="@+id/action_mainFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/speechToTextFragment"
+        android:name="org.eshendo.helperapp.ui.fragments.SpeechToTextFragment"
+        android:label="SpeechToTextFragment"
+        tools:layout="@layout/speech_to_text_fragment"
+        />
+    <fragment
+        android:id="@+id/textToSpeechFragment"
+        android:name="org.eshendo.helperapp.ui.fragments.TextToSpeechFragment"
+        android:label="TextToSpeechFragment"
+        tools:layout="@layout/text_to_speech_fragment"
+        />
+    <fragment
+        android:id="@+id/describePictureFragment"
+        android:name="org.eshendo.helperapp.ui.fragments.DescribePictureFragment"
+        android:label="DescribePictureFragment"
+        tools:layout="@layout/describe_picture_fragment"
+        />
+    <dialog
+        android:id="@+id/wannaMakeOfferDialog"
+        android:name="org.eshendo.helperapp.ui.dialog.WannaMakeOfferDialog"
+        android:label="WannaMakeOfferDialog"
+        tools:layout="@layout/wanna_make_offer_dialog"
+        >
+        <action
+            android:id="@+id/action_wannaMakeOfferDialog_to_makeOfferFragment"
+            app:destination="@id/makeOfferFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/makeOfferFragment"
+        android:name="org.eshendo.helperapp.ui.fragments.MakeOfferFragment"
+        android:label="MakeOfferDialog"
+        tools:layout="@layout/make_offer_fragment"
+        />
+    <dialog
+        android:id="@+id/appCannotWorkDialog"
+        android:name="org.eshendo.helperapp.ui.dialog.AppCannotWorkDialog"
+        android:label="AppCannotWorkDialog"
+        tools:layout="@layout/app_cannot_work_dialog"
+        />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="org.eshendo.helperapp.ui.fragments.AboutFragment"
+        android:label="AboutFragment"
+        tools:layout="@layout/about_fragment"
+        />
+</navigation>

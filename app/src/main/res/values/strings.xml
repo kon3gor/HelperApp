@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">HelperApp</string>
+    <string name="main_title">Привет, как я могу помочь?</string>
+    <string name="make_offer">Предложить функцию</string>
+    <string name="make_offer_short">Предложить</string>
+    <string name="about">О проекте</string>
+    <string name="stt_title">Просто говорите. Текст появиться, когда вы остановитесь</string>
+    <string name="begin">Начать</string>
+    <string name="tts_title">Что мне\nозвучить?</string>
+    <string name="voice">Озвучить</string>
+    <string name="hint">Тут будет распознанный текст</string>
+    <string name="di_title">Выбирете картинку, либо сделайте новую</string>
+    <string name="wanna_make_offer">Хотите предложить функцию?</string>
+    <string name="describe_func">Опишите функцию, которую вы хотели бы видеть в нашем приложении</string>
+    <string name="app_cannot_work">Приложение не может работать без этих разрешений</string>
+    <string name="give">Предоставить</string>
+    <string name="about_title">О проекте</string>
+</resources>

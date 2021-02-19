@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideOverlay"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/main_title"
+                android:textColor="@android:color/black"
+                android:textSize="36sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp">
+
+                <LinearLayout
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/speechToText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <org.eshendo.helperapp.ui.custom.CircleItem
+                        android:id="@+id/stt"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        app:text="Речь в текст"
+                        app:image="@drawable/ic_speech_to_text"
+                        app:bgColor="@color/green"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/textToSpeech"
+                    android:layout_marginTop="-40dp"
+                    android:layout_below="@id/speechToText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <org.eshendo.helperapp.ui.custom.CircleItem
+                        android:id="@+id/tts"
+                        android:layout_gravity="end"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        app:text="Текст в речь"
+                        app:image="@drawable/ic_text_to_speech"
+                        app:bgColor="@color/yellow"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/describePicture"
+                    android:layout_marginTop="-40dp"
+                    android:layout_below="@id/textToSpeech"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <org.eshendo.helperapp.ui.custom.CircleItem
+                        android:id="@+id/di"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        app:text="Описать фото"
+                        app:image="@drawable/ic_describe_image"
+                        app:bgColor="@color/orange"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fileToText"
+                    android:layout_marginTop="-40dp"
+                    android:layout_below="@id/describePicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <org.eshendo.helperapp.ui.custom.CircleItem
+                        android:id="@+id/ftt"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        app:text="Ваша функция"
+                        app:image="@drawable/ic_question"
+                        app:bgColor="@color/blue"
+                        android:layout_gravity="end"
+                        />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/makeOffer"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@id/fileToText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/purple"
+                    android:background="@drawable/btn_bg"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/make_offer"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="50dp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/about"
+                    android:layout_below="@id/makeOffer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about"
+                    android:textSize="15sp"
+                    android:textColor="@color/purple"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="20dp"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
