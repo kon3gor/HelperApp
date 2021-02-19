@@ -14,5 +14,8 @@ Also this app corresponds Google's best practices and clean architecture with MV
 ![](https://raw.githubusercontent.com/kon3gor/HelperApp/mockups/screenshots/mockup2.png)
 ![](https://raw.githubusercontent.com/kon3gor/HelperApp/mockups/screenshots/mockup3.png)
 
+## Screenshots
+<img src="https://raw.githubusercontent.com/kon3gor/HelperApp/mockups/screenshots/3.png" alt="drawing" width="200"/> <img src="https://raw.githubusercontent.com/kon3gor/HelperApp/mockups/screenshots/2.png" alt="drawing" width="200"/> <img src="https://raw.githubusercontent.com/kon3gor/HelperApp/mockups/screenshots/1.png" alt="drawing" width="200"/>
+
 TODO: 
 * add lisence
